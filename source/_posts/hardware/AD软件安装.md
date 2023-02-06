@@ -1,19 +1,20 @@
 ---
+
 title: AD软件安装及卸载
 date: 2023-01-04
 author: mxmhub
 cover: true
-img: 
-summary: 
+img: /image/AD软件安装/100.png
+summary: 软件的安装和卸载教程
 categories: harware
 tags:
   - AD
   - 安装
   - 卸载
+
 ---
 
-### 软件安装及卸载
-#### 软件安装
+### 软件安装
 
 1. 解压文件，双击AltiumDesignerSetup_21_0_3.exe 文件， 即可弹出安装向导对话框， 点击NEXT
 
@@ -57,7 +58,7 @@ tags:
 版本了，如果您想再次切换到英文版，可以按照相同的操作再处理一遍
 <img src="/image/AD软件安装/15.png" style="zoom:115%;" />
 
-#### 软件卸载
+### 软件卸载
 
 1. 控制面板 > 程序 > 程序和功能 > 卸载程序 > 找到AD软件 > 选中右击卸载
 <img src="/image/AD软件安装/21.png" style="zoom:115%;" />

@@ -1,18 +1,22 @@
 ---
-title: AD原理图设置
+
+title: AD SCH
 date: 2023-01-05
 author: mxmhub
 cover: true
-img: 
-summary: 
+img: /image/ADsch/100.png
+
+summary: sch中的部分功能介绍,涉及Schlib、Draftsman、Project
+
 categories: harware
 tags:
   - AD
-  - 原理图
+  - SCH
+
 ---
 
 
-##### 1. 3D图纸（三维图纸）Draftsman
+### 1. 3D图纸（三维图纸）Draftsman
 
 在工程下添加机械图纸 > 新建 > Draftsman Document > ok > Place > 
 
@@ -25,14 +29,14 @@ tags:
 点击相关的视频链接：[Draftsman](<https://www.altium.com.cn/webinars/on-demand/altium-designer-18-%E6%96%B0%E5%8A%9F%E8%83%BD-draftsman-%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF?utm_source=ownedmediawebinars&utm_medium=webinarsmegamenu&utm_campaign=webinars>
 )
 
-##### 2. 快速添加引脚和修改引脚名称
+### 2. 快速添加引脚和修改引脚名称
 
 - 放置引脚 > 右击复制 > 编辑 > 阵列式粘贴 > 根据需要的引脚数量填写对象数量 > 勾选移除前导零 > 确定
 - 选中所以引脚 > Panels(右下角) > SCHLIB List > View改为Edit > 将在Excel表格中引脚名称复制 > 在Name栏 > 右击 > 选择列 > 粘贴
 
 ![](/image/ADsch/4.png)
 
-##### 3. 片断摘取连接
+### 3. 片断摘取连接
 
 - 将需要摘取模块单独放在一个工程（片断摘取成功后可将工程删掉），原理图及PCB，在原理图将元器件编号起始值为1000，步骤：工具 > 注释 > 原理图标注 > 原理图页标注（起始索引）勾选并改值为1000 > Reset All > 更新更改列表 > 接受更改 > 确定，将此原理图导入PCB 
 
@@ -48,7 +52,7 @@ tags:
 
 点击相关的图文链接：[片断摘取连接](https://www.altium.com/cn/documentation/altium-designer/designing-for-reuse?version=18.1)
 
-##### 4. 同一个工程下有多个原理图和多个PCB
+### 4. 同一个工程下有多个原理图和多个PCB
 
 ![](/image/ADsch/7.png)
 
@@ -60,21 +64,21 @@ Extra Components栏鼠标右击 > Update All in >>PCB Document[PCB2.PcbDoc] > �
 
 ![](/image/ADsch/9.png)
 
-##### 5. 原理图工程编译检查设置
+### 5. 原理图工程编译检查设置
 
 原理图工程编译检查设置：工程 > 工程选项 > 位号重复（Duplicate Paet Designators）、网络悬浮（Floating net labels）、电源悬浮（Floating power objects）、单端网络（Nets with only one pin）将这四个都改成严重错误（Fatel Error）
 
 ![](/image/ADsch/10.png)
 ![](/image/ADsch/11.png)
 
-##### 6. 绘制原理图库元器件如何添加子部件
+### 6. 绘制原理图库元器件如何添加子部件
 
 - 添加新建一个元器件
 - 可绘制完成一个子部件或在空白处右击 > 工具 > 新部件
 
 ![](/image/ADsch/12.png)
 
-##### 7. 原理图模板设计
+### 7. 原理图模板设计
 
 - 新建原理图 > Properties > Page options > Standard > 去掉勾Title block 
 - 在原理图中放置 线 > 绘制自己想要的模板格式
@@ -89,7 +93,7 @@ Extra Components栏鼠标右击 > Update All in >>PCB Document[PCB2.PcbDoc] > �
 
 ![](/image/ADsch/14.png)
 
-##### 8. 元器件隐藏引脚连接到指定网络设置
+### 8. 元器件隐藏引脚连接到指定网络设置
 
 > AD18版本前设置方法
 
@@ -126,7 +130,7 @@ Extra Components栏鼠标右击 > Update All in >>PCB Document[PCB2.PcbDoc] > �
 
 ![](/image/ADsch/21.png)
 
-##### 9.  添加原理图库引脚名称放置方式
+### 9.  添加原理图库引脚名称放置方式
 > AD18版本前
 
 双击需要修改的引脚 > Orientation > 选择模式（90 Degrees / 0Degrees）> 确定
@@ -139,7 +143,7 @@ Extra Components栏鼠标右击 > Update All in >>PCB Document[PCB2.PcbDoc] > �
 
 ![](/image/ADsch/23.png)
 
-##### 10.  网络颜色同步
+### 10.  网络颜色同步
 
 - 添加：视图 > 设置网络颜色 > 选择颜色（也可以自定义颜色）> 选择需要同步的网络即可
 

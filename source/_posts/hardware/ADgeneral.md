@@ -1,32 +1,36 @@
 ---
+
 title: AD通用设置
 date: 2023-01-05
 author: mxmhub
 cover: true
-img: 
-summary: 
+img: /image/ADgeneral/100.png
+
+summary: sch、pcb的参数设置,sch项目检查、pcb规则设计,文件输出等功能均在本章有所介绍
+
 categories: harware
 tags:
   - AD
-  - 原理图
+  - SCH
   - PCB
   - 参数设置
+
 ---
 
 ### 1. 原理图参数表设置
 
-#### 1.1 原理图表格模板样式,如下图:
+#### 1.1 原理图表格模板样式
+
+- 如下图:
 
 ![原理图模板](/image/ADgeneral/1.png)
 
 - 模板设置：设计 > 模板> 通用模板> 选择合适纸张大小的模板
-- 参数设置：右上角搜索（Search） > 选项 > 文档参数 > 在 Parameters 栏
-修改对应参数 或 Properties > 在 Parameters 栏修改对应参数
+- 参数设置：右上角搜索（Search） > 选项 > 文档参数 > 在 Parameters 栏修改对应参数 或 Properties > 在 Parameters 栏修改对应参数
 
-#### 1.2 原理图工程编译检查设置：工程 > 工程选项 > 位号重复（Duplicate 
-Paet Designators）、重复名称（Duplicate nets）、网络悬浮（Floating net 
-labels）、电源悬浮（Floating power objects）、单端网络（Nets with only 
-one pin）将这五个都改成严重错误（Fatel Error）
+#### 1.2 原理图工程编译检查设置
+
+- 工程 > 工程选项 > 位号重复（Duplicate Paet Designators）、重复名称（Duplicate nets）、网络悬浮（Floating net labels）、电源悬浮（Floating power objects）、单端网络（Nets with only one pin）将这五个都改成严重错误（Fatel Error）
 
 ![](/image/ADgeneral/2.png)
 
@@ -36,9 +40,11 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 ![](/image/ADgeneral/4.png)
 
-### 2. PCB规则设计
+### 2. PCB规则设计-间距
 
-#### 2.1.1 板框间距: 推荐值为0.3mm,最小间距值为 0.1mm
+#### 2.1 板框间距:
+
+- 板框间距: 推荐值为0.3mm,最小间距值为 0.1mm
 - 非邮票孔处走线和焊盘距板边距离≧0.3mm
 - 非邮票孔处锣边公差：±0.2mm（普锣），±0.1mm（精锣）
 
@@ -50,7 +56,9 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 ![](/image/ADgeneral/29.png)
 
-#### 2.1.2 ROOM间距: 最小间距值为 0.089mm(3.5mil),推荐值根据设计需求写
+#### 2.2 ROOM间距
+
+ROOM间距: 最小间距值为 0.089mm(3.5mil),推荐值根据设计需求写
 
 如图此ROOM为天线的ROOM,天线阻抗为50R,根据阻抗计算得此信号与其他信号间距为0.381mm
 
@@ -58,23 +66,31 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 其他ROOM设计可参考此图
 
-#### 2.1.3 Polygon间距: 最小间距值为 0.089mm(3.5mil),推荐值根据设计需求写
+#### 2.3 Polygon间距
+
+Polygon间距: 最小间距值为 0.089mm(3.5mil),推荐值根据设计需求写
 
 ![](/image/ADgeneral/7.png)
 
 此设计一般针对阻抗信号,如共面阻抗90R等
 
-#### 2.1.4 DifferentialPair 间距: 最小间距值为 0.089mm(3.5mil),推荐值根据设计需求写
+#### 2.4 DifferentialPair 间距
+
+DifferentialPair 间距: 最小间距值为 0.089mm(3.5mil),推荐值根据设计需求写
 
 ![](/image/ADgeneral/8.png)
 
 此设计一般针对阻抗信号,如共面阻抗100R等
 
-#### 2.1.5 CLASS间距: 推荐值为0.178mm(7mil)或0.2mm(8mil),最小间距值为 0.089mm(3.5mil)
+#### 2.5 CLASS间距
+
+CLASS间距: 推荐值为0.178mm(7mil)或0.2mm(8mil),最小间距值为 0.089mm(3.5mil)
 
 ![](/image/ADgeneral/9.png)
 
-#### 2.1.6 ALL间距: 最小间距值为 0.089mm(3.5mil),推荐值根据设计需求写
+#### 2.6 ALL间距
+
+ALL间距: 最小间距值为 0.089mm(3.5mil),推荐值根据设计需求写
 
 ![](/image/ADgeneral/10.png)
 
@@ -82,7 +98,11 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 > ![](/image/ADgeneral/11.png)
 
-#### 2.2.1 ROOM线宽: 最小线宽值为 0.089mm(3.5mil),推荐值根据设计需求写
+### 3. PCB规则设计-线宽
+
+#### 3.1 ROOM线宽
+
+ROOM线宽: 最小线宽值为 0.089mm(3.5mil),推荐值根据设计需求写
 
 如图此ROOM为天线的ROOM,天线阻抗为50R,根据阻抗计算得此信号的线宽值为0.508mm(20mil)
 
@@ -90,88 +110,126 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 其他ROOM设计可参考此图
 
-#### 2.2.2 CLASS线宽: 最小线宽值为 0.089mm(3.5mil),推荐值根据设计需求写
+#### 3.2 CLASS线宽
+
+CLASS线宽: 最小线宽值为 0.089mm(3.5mil),推荐值根据设计需求写
 
 ![](/image/ADgeneral/13.png)
 
 此设计一般针对阻抗信号,如单端阻抗50R等
 
-#### 2.2.3 ALL线宽: 最小线宽值为 0.089mm(3.5mil),推荐值根据设计需求写
+#### 3.3 ALL线宽
+
+ALL线宽: 最小线宽值为 0.089mm(3.5mil),推荐值根据设计需求写
 
 ![](/image/ADgeneral/14.png)
 
-#### 2.3 过孔
+### 4. PCB规则设计-过孔
 
 - 单双面板：0.3mm(内径)/0.5mm(外径)
 - 多层板：0.15mm(内径)/0.25mm(外径)
 
 ![](/image/ADgeneral/16.png)
 
-#### 2.3.1 CLASS过孔: 推荐值根据设计需求写
+#### 4.1 CLASS过孔
+
+CLASS过孔: 推荐值根据设计需求写
 
 ![](/image/ADgeneral/15.png)
 
-##### 2.3.2 ROOM过孔: 推荐值根据设计需求写
+#### 4.2 ROOM过孔
+
+ROOM过孔: 推荐值根据设计需求写
 
 ![](/image/ADgeneral/17.png)
 
-#### 2.3.3 ALL过孔: 推荐值根据设计需求写
+#### 4.3 ALL过孔
+
+ALL过孔: 推荐值根据设计需求写
 
 ![](/image/ADgeneral/18.png)
 
-#### 2.4 DifferentialPair线宽: 推荐值根据设计需求写
+### 5 PCB规则设计-DifferentialPair线宽
+
+DifferentialPair线宽: 推荐值根据设计需求写
 
 ![](/image/ADgeneral/19.png)
 
-#### 2.5.1 Power Plane Connect Style(电源平面连接方式或负片连接方式): 推荐设置 Ddirect Connect
+### 6 PCB规则设计-Plane
+
+#### 6.1 Power Plane Connect Style
+
+Power Plane Connect Style(电源平面连接方式或负片连接方式): 推荐设置 Ddirect Connect
 
 ![](/image/ADgeneral/20.png)
 
-##### 2.5.2 Power Plane Clearance(电源平面层间距或负片连接间距): 推荐值为0.178mm(7mil)
+#### 6.2 Power Plane Clearance
+
+Power Plane Clearance(电源平面层间距或负片连接间距): 推荐值为0.178mm(7mil)
 
 ![](/image/ADgeneral/21.png)
 
-#### 2.5.3 ROOM铺铜: 推荐设置根据设计需要选择
+#### 6.3 ROOM铺铜
+
+ROOM铺铜: 推荐设置根据设计需要选择
 
 ![](/image/ADgeneral/22.png)
 
-#### 2.5.4 Footprint铺铜: 推荐设置根据设计需要选择
+#### 6.4 Footprint铺铜
+
+Footprint铺铜: 推荐设置根据设计需要选择
 
 此设计是以封装名的类型设置铺铜连接方式
 
 ![](/image/ADgeneral/23.png)
 
-##### 2.5.5 ALL铺铜: 推荐设置根据设计需要选择
+#### 6.5 ALL铺铜
+
+ALL铺铜: 推荐设置根据设计需要选择
 
 此处的通孔和SMD一般选择 Relief Connect,过孔一般选择Ddirect Connect
 
 ![](/image/ADgeneral/24.png)
 
-#### 2.6.1 Hole Size(孔的大小): 此处最大的值若小于实际使用到的孔的值,DRC则会报错
+### 7 PCB规则设计-Manufacturing
+
+#### 7.1 Hole Size(孔的大小)
+
+Hole Size(孔的大小): 此处最大的值若小于实际使用到的孔的值,DRC则会报错
 
 注意: 此设计含孔与过孔
 
 ![](/image/ADgeneral/25.png)
 
-#### 2.6.2 HoleToHoleClearance(孔到孔间距): 推荐值根据设计需求写
+#### 7.2 HoleToHoleClearance(孔到孔间距)
+
+HoleToHoleClearance(孔到孔间距): 推荐值根据设计需求写
 
 ![](/image/ADgeneral/26.png)
 
-#### 2.6.3 MinimumSolderMaskSliver(最小化阻焊层裂口): 推荐值根据设计需求写
+#### 7.3 MinimumSolderMaskSliver(最小化阻焊层裂口)
+
+MinimumSolderMaskSliver(最小化阻焊层裂口): 推荐值根据设计需求写
 
 ![](/image/ADgeneral/27.png)
 
-#### 2.6.4 SilkToSilkClearance(对象与丝印层的最小距离): 推荐值根据设计需求写
+#### 7.4 SilkToSilkClearance(对象与丝印层的最小距离)
+
+SilkToSilkClearance(对象与丝印层的最小距离): 推荐值根据设计需求写
 
 ![](/image/ADgeneral/28.png)
 
-#### 2.6.5 BoardOutlineClearance(板框最小距离): 推荐值为0.3mm,最小间距值为 0.1mm
+#### 7.5 BoardOutlineClearance(板框最小距离)
+
+- BoardOutlineClearance(板框最小距离): 推荐值为0.3mm,最小间距值为 0.1mm
 - 非邮票孔处走线和焊盘距板边距离≧0.3mm
 - 非邮票孔处锣边公差：±0.2mm（普锣），±0.1mm（精锣）
 
 ![](/image/ADgeneral/29.png)
 
-#### 2.7 Length(等长线): 根据同组类需要同等长度设置等长区间
+### 8 PCB规则设计-Length(等长线)
+
+Length(等长线): 根据同组类需要同等长度设置等长区间
 
 例如:DDR中的数据线D0-D15需要将等长控制在1600-1700mil,误差在100mil内
 
@@ -179,25 +237,27 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 其他参数类设置可参考此图
 
-#### 2.8.1 RoomDefinition(ROOM参数设置):
+### 9 PCB规则设计-Placement
 
-根据设计需求设置Where The Object Matches
+#### 9.1 RoomDefinition(ROOM参数设置
+
+RoomDefinition(ROOM参数设置):根据设计需求设置Where The Object Matches
 
 ![](/image/ADgeneral/32.png)
 
-#### 2.8.2 ComponentClearance (组件间隙)
+#### 9.2 ComponentClearance (组件间隙)
 
 允许组件与组件的最小间距值设置,此设计预防撞件
 
 ![](/image/ADgeneral/33.png)
 
-#### 2.8.3 Height (组件允许高度)
+#### 9.3 Height (组件允许高度)
 
 允许组件的高度值设置,此设计预防与其他干涉
 
 ![](/image/ADgeneral/34.png)
 
-### 3. 板子形状剪切设置
+### 10. 板子形状剪切设置
 
 - 设置参考坐标原点：编辑 > 原点 > 设置 > 点击左下角，如下图中的 4
 点击机械层（Mechanical 1）> 放置 > 线条 > 绘制板子的大小，如下图中的
@@ -207,7 +267,7 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 ![](/image/ADgeneral/35.png)
 
-### 4. 铺铜设计
+### 11. 铺铜设计
 
 方法1: 在机械层用线条画边框 > 选中边框 > 工具 > 转换 > 从选择的元素创建铺铜 > 双击选中的框内区域 > Properties > net（GND）> Properties(Layer)选择层 > Fill Mode（Solid (copper regions））> Pour Over All Same Net Objects > 勾选Remove Dead Copper > Apply
 
@@ -225,9 +285,9 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 铺铜挖空区域: 放置 > 多边形铺铜挖空 > 选中区域 > 即可
 
-### 5. 装配输出
+### 12. 装配输出
 
-#### 5.1 装配PFD输出
+#### 12.1 装配PFD输出
 
 文件 > 智能 PDF > Next > 当前文件 > Next > Next >在 Name 栏鼠标右击 >创建装配图（Create Assembly Drawings）> 双击 >选择需要的层
 
@@ -235,7 +295,7 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 ![](/image/ADgeneral/38.png)
 
-#### 5.2 装配PFD输出装配DXF文件输出 
+#### 12.2 装配PFD输出装配DXF文件输出 
 
 先将绘制好的PCB复制一份 > 取消全部布线、删除所有铺铜和挖铜 > 文件 > 导出 > DCF/DWG > 选择保存路径 > 版本选择 2004 > 格式选择 DXF > 其他选择系统默认 > 确定
 
@@ -245,9 +305,9 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 ![](/image/ADgeneral/55.png)
 
-### 6. 制造文件导出
+### 13. 制造文件导出
 
-#### 6.1 Gerber Files文件导出
+#### 13.1 Gerber Files文件导出
 - 文件 > 制作输出 > gerber files > gerber设置 > 通用 > 单位（选择英寸）> 格式（选择 2:5）
 
 ![](/image/ADgeneral/40.png)
@@ -262,7 +322,7 @@ one pin）将这五个都改成严重错误（Fatel Error）
 
 - 光圈/高级> 默认设置
 
-#### 6.2 NC Drill Files(钻孔文件导出)
+#### 13.2 NC Drill Files(钻孔文件导出)
 
 - 文件 > 制作输出 > NC Drill files > NC Drill 设置 > 
 NC Drill 格式 >> 单位（英寸）>> 格式（2:5）> 前导/尾数零（摒
@@ -275,25 +335,25 @@ NC Drill 格式 >> 单位（英寸）>> 格式（2:5）> 前导/尾数零（摒
 
 ![](/image/ADgeneral/44.png)
 
-#### 6.3 钢表比对
+#### 13.3 钢表比对
 
 - 文件 > 制作输出 > Test Point Report > 报告格式只勾选（IPC-D-356A）>其他采用默认
 
 ![](/image/ADgeneral/45.png)
 
-#### 6.4 贴片坐标文件
+#### 13.4 贴片坐标文件
 
 - 文件 > 装配输出 > Generates pick and place files > 根据需求在所有列中勾选需要显示的项
 
 ![](/image/ADgeneral/46.png)
 
-#### 6.5 导出的文件默认路径
+#### 13.5 导出的文件默认路径
 
 导出的文件可在本工程中的 Project Outputs for vboost 文件夹内找到
 
 ![](/image/ADgeneral/47.png)
 
-#### 6.6 文件夹管理
+#### 13.6 文件夹管理
 
 ![](/image/ADgeneral/48.png)
 
@@ -322,7 +382,7 @@ NC Drill 格式 >> 单位（英寸）>> 格式（2:5）> 前导/尾数零（摒
 
 ![](/image/ADgeneral/54.png)
 
-> ##### 注意:
+> **注意:**
 > 给贴片厂生产发 SMT 文件夹
 > 给厂家制作 PCB 电路板发 CAM 文件夹
 > 给结构工程师发 DXF 文件夹
