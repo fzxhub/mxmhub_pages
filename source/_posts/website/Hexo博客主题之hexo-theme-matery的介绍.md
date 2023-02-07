@@ -4,7 +4,7 @@ date: 2018-09-28 13:34:00
 author: mxmhub
 cover: true
 categories: website
-summary: 这是一个采用`Material Design`和响应式设计的 Hexo 博客主题。简单漂亮，文章内容美观易读，响应式设计。
+summary: 这是一个采用响应式设计的Hexo博客主题。文章内容美观易读，响应式设计。
 tags:
   - Hexo
   - hexo-theme-matery

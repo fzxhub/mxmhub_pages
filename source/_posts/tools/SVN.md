@@ -12,7 +12,7 @@ img: /image/SVN/100.png
 
 summary: 数据清除、地址输入、数据上传/下载均在本章节讲解
 
-categories: harware
+categories: tools
 
 tags:
   - SVN

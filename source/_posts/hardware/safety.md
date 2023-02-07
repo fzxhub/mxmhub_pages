@@ -5,7 +5,7 @@ date: 2023-01-05
 author: mxmhub
 cover: true
 img: /image/safety/100.png
-summary: Layout安规的操作与标准
+summary: Layout安规的操作与标准，记录本人常用通用安规
 categories: harware
 tags:
   - AD
